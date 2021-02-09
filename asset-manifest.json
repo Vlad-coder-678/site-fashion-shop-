@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/site-inspire-/static/css/main.424bb6fc.chunk.css",
-    "main.js": "/site-inspire-/static/js/main.dbc9b680.chunk.js",
-    "main.js.map": "/site-inspire-/static/js/main.dbc9b680.chunk.js.map",
+    "main.css": "/site-inspire-/static/css/main.080cc523.chunk.css",
+    "main.js": "/site-inspire-/static/js/main.19efa182.chunk.js",
+    "main.js.map": "/site-inspire-/static/js/main.19efa182.chunk.js.map",
     "runtime-main.js": "/site-inspire-/static/js/runtime-main.b33bf8b6.js",
     "runtime-main.js.map": "/site-inspire-/static/js/runtime-main.b33bf8b6.js.map",
     "static/js/2.cb3ac13e.chunk.js": "/site-inspire-/static/js/2.cb3ac13e.chunk.js",
     "static/js/2.cb3ac13e.chunk.js.map": "/site-inspire-/static/js/2.cb3ac13e.chunk.js.map",
     "index.html": "/site-inspire-/index.html",
-    "static/css/main.424bb6fc.chunk.css.map": "/site-inspire-/static/css/main.424bb6fc.chunk.css.map",
+    "static/css/main.080cc523.chunk.css.map": "/site-inspire-/static/css/main.080cc523.chunk.css.map",
     "static/js/2.cb3ac13e.chunk.js.LICENSE.txt": "/site-inspire-/static/js/2.cb3ac13e.chunk.js.LICENSE.txt",
     "static/media/bookmark.3e28fa43.jpg": "/site-inspire-/static/media/bookmark.3e28fa43.jpg",
     "static/media/brackets.d0fbd9ca.jpg": "/site-inspire-/static/media/brackets.d0fbd9ca.jpg",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.b33bf8b6.js",
     "static/js/2.cb3ac13e.chunk.js",
-    "static/css/main.424bb6fc.chunk.css",
-    "static/js/main.dbc9b680.chunk.js"
+    "static/css/main.080cc523.chunk.css",
+    "static/js/main.19efa182.chunk.js"
   ]
 }
