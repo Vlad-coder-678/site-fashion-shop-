@@ -1,0 +1,12 @@
+export { default as HeaderMenuBurger } from "./HeaderMenuBurger.jsx";
+export { default as HeaderLogo } from "./HeaderLogo.jsx";
+export { default as HeaderSocial } from "./HeaderSocial.jsx";
+export { default as Title } from "./Title.jsx";
+export { default as FirstScreenBackground } from "./FirstScreenBackground.jsx";
+export { default as WorkArticle } from "./WorkArticle.jsx";
+export { default as Article } from "./Article.jsx";
+export { default as Div } from "./Div.jsx";
+export { default as Social } from "./Social.jsx";
+export { default as Button } from "./Button.jsx";
+export { default as TestimonialSlider } from "./TestimonialSlider.jsx";
+export { default as ScrollToTop } from "./ScrollToTop.jsx";

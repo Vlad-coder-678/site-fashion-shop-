@@ -1,0 +1,99 @@
+@keyframes fromBottom__toCenter {
+  from {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes fromCenter__toTop {
+  from {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+}
+
+@keyframes fromBottom__toCenter__inner {
+  from {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes fromCenter__toTop__inner {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -10px);
+  }
+}
+
+.buttonHover {
+  display: block;
+  height: 50px;
+  margin: 30px;
+  padding: 0 15px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.4s ease;
+  .hover__out {
+    z-index: 1;
+    display: inline-block;
+    animation: fromBottom__toCenter 0.3s ease 1 forwards;
+    .hover__out__text {
+      font-size: 10px;
+      line-height: 50px;
+      letter-spacing: 2px;
+      color: #000;
+      animation: fromBottom__toCenter__inner 0.3s ease-out;
+    }
+  }
+  .hover {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 4;
+    animation: fromCenter__toTop 0.3s ease 1 forwards;
+    .hover__text {
+      position: relative;
+      display: inline-block;
+      font-size: 10px;
+      line-height: 50px;
+      letter-spacing: 2px;
+      color: #fff;
+      animation: fromCenter__toTop__inner 0.3s ease;
+    }
+  }
+  &:hover {
+    transition: border-color 0.4s ease;
+    border-color: transparent;
+  }
+  &:hover .hover__out {
+    animation: fromCenter__toTop 0.3s ease 1 forwards;
+  }
+  &:hover .hover__out .hover__out__text {
+    display: block;
+    animation: fromCenter__toTop__inner 0.3s ease;
+  }
+  &:hover .hover {
+    animation: fromBottom__toCenter 0.3s ease 1 forwards;
+  }
+  &:hover .hover .hover__text {
+    animation: fromBottom__toCenter__inner 0.3s ease;
+  }
+}

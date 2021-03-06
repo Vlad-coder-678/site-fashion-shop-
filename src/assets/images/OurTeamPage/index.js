@@ -1,0 +1,9 @@
+export { default as ellipse1 } from "./ellipse-1.png";
+export { default as ellipse2 } from "./ellipse-2.png";
+export { default as ellipse3 } from "./ellipse-3.png";
+export { default as ellipse4 } from "./ellipse-4.png";
+export { default as facebook } from "./icon-facebook.png";
+export { default as googlePlus } from "./icon-google-plus.png";
+export { default as pinterest } from "./icon-pinterest.png";
+export { default as twitter } from "./icon-twitter.png";
+export { default as linkedIn } from "./icon-linked-in.jpg";

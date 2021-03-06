@@ -1,0 +1,95 @@
+.cubes {
+  background-color: #0040c1;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* В качестве анимированных элементов на фоне будем использовать 
+квадраты. Каждый квадрат будет с абсолютной позицией и анимироваться 
+за счет изменения свойства transform.*/
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px darken(#0040c1, 8%);
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+}
+
+/* -- Первым делом необходимо описать начальную позицию 
+каждого элемента в 0 кадре анимации. И задержку анимации, 
+что бы квадраты появлялись в разное время. -- */
+
+.cube:nth-child(2n) {
+  border-color: lighten(#0040c1, 10%);
+}
+
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+/* -- Следующий шаг это функция keyframe и назовем ее cube. 
+Что бы скрыть и показать куб применим свойство opacity:0 и 
+opacity:1 и для визуального эффекта изменим scale и rotate 
+итого наша функция выглядит следующим образом. -- */
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/* Осталось ее вызвать и описать с помощью animate. 
+Применить ее нужно к селектору .cube в конце списка свойств.
+
+animation: cube 12s ease-in forwards infinite;
+cube — название функции;
+12s — длительность анимации;
+forwards — по окончании анимации элемент сохранит стили последнего ключевого кадра;
+infinite — анимация будет зациклена; */
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px darken(#0040c1, 8%);
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}

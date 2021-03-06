@@ -1,0 +1,53 @@
+.callBackForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  input {
+    margin: 5px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #898989;
+    border: 2px solid black;
+    padding-left: 15px;
+  }
+  textarea {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 5px;
+    height: 200px;
+    resize: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #898989;
+    border: 2px solid black;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  button {
+    text-transform: uppercase;
+    width: 170px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px auto;
+    padding: 13px 0;
+    font-weight: 700;
+    color: white;
+    background-color: #000;
+  }
+  button:hover {
+    animation: neon-1 0.1s ease-in-out infinite alternate;
+  }
+}
+@media (max-width: 768px) {
+  .callBackForm {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  .callBackForm {
+    width: 95%;
+  }
+}
